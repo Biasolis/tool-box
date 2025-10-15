@@ -1,0 +1,35 @@
+# Arquivo .gitignore completo para o projeto Tool-Box
+
+# --- Arquivos de Ambiente ---
+# IGNORA TODOS os arquivos .env, mas PERMITE o .env.example
+.env*
+!.env.example
+
+# --- Dependências e Pastas de Build ---
+# Ignora todas as pastas node_modules em qualquer lugar do projeto
+**/node_modules
+
+# Ignora a pasta de build do frontend
+**/frontend/dist
+
+# Ignora logs de NPM
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Pastas Temporárias dos Microsserviços ---
+# Ignora as pastas de uploads e temporárias
+**/uploads
+**/temp
+
+# --- Arquivos do Sistema Operacional ---
+.DS_Store
+Thumbs.db
+
+# --- Arquivos de Editor/IDE ---
+.vscode/
+.idea/
+
+# --- Arquivos de Deploy (se houver) ---
+# Se você tiver arquivos específicos de deploy, adicione aqui

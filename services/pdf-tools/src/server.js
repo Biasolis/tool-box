@@ -13,7 +13,7 @@ const imageSize = require('image-size');
 const app = express();
 app.use(cors());
 const upload = multer({ storage: multer.memoryStorage() });
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3022;
 
 // --- CLIENTE S3 (MINIO) ---
 const s3Client = new S3Client({

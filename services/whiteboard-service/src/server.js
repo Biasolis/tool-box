@@ -6,7 +6,7 @@ const db = require('./db');
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '20mb' }));
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 3025;
 
 const getUserId = (req, res, next) => {
     const userId = req.headers['x-user-id'];

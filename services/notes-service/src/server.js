@@ -6,7 +6,7 @@ const db = require('./db');
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '10mb' })); // Aumentado o limite para notas grandes
-const PORT = process.env.PORT || 3004;
+const PORT = process.env.PORT || 3024;
 
 const getUserId = (req, res, next) => {
     const userId = req.headers['x-user-id'];

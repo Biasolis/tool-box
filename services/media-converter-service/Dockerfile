@@ -14,8 +14,7 @@ RUN npm install --only=production
 COPY ./src ./src
 
 # Expõe a porta que o microsserviço irá rodar (deve ser configurada via ENV)
-# O EXPOSE aqui é mais para documentação. A porta real é definida no docker-compose.
-EXPOSE 3000 
+EXPOSE 3023
 
 # Comando para iniciar o servidor
 CMD [ "node", "src/server.js" ]

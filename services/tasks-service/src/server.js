@@ -6,7 +6,7 @@ const db = require('./db');
 const app = express();
 app.use(cors());
 app.use(express.json());
-const PORT = process.env.PORT || 3007;
+const PORT = process.env.PORT || 3027;
 
 // Middleware para extrair o ID do usuário
 const getUserId = (req, res, next) => {
